@@ -18,5 +18,5 @@ function insertSort(ste){
             }
         }
     }
-    return arr
+    return arr 
 }
