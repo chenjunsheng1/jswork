@@ -8,8 +8,7 @@ function sort(method){
         logs = insertSort(origin)
     }
     showDiv = document.getElementById('Anim')
-    showDiv.innerHTML = logs
     logValues = logs.values()
     console.log(logValues.next())
-    settimeout("showLog(logValues,showDiv)",50)
+    setTimeout("showLog(logValues,showDiv)",50)
 }
