@@ -88,7 +88,14 @@
     border:1px solid #bbb;
 }
 
+.cart-del,
+.cart-all,
+.cart-unall{
+    color:#3366d4;
+}
+
 .cart-del:hover,
+.cart-unall:hover,
 .cart-all:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -99,11 +106,16 @@
     text-align: right;
 }
 
-.cart-bottom .cart-all{
+.cart-bottom .cart-all {
     position: relative;
     top:1px;
 }
 
+.cart-total-price{
+    color:#FF3334;
+    font-weight: bolder;
+    font-size: 16px;
+}
 .cart-bottom-btn{
     color:#FFF;
     font-size: 14px;
