@@ -41,11 +41,11 @@
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    background: rgba(145,144,144, 5);
+    background:rgba(145,144,144, .5);
     cursor: pointer;
 }
 
-.dot.on{
+.dot .on{
     background-color: #fff;
 }
 
@@ -69,5 +69,12 @@
     position: absolute;
     top: 50%;
     left: 0;
+    margin-top: -50px;
+}
+
+.arrow .next{
+    position: absolute;
+    top:50%;
+    right:0;
     margin-top: -50px;
 }

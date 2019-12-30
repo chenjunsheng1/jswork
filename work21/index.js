@@ -5,38 +5,38 @@ $(function(){
     var width = 1420;
     var speed = 400;
     var firstimg = $('.hot li').first().clone();
-    $('.hot').append(firstimg).width($('.hot li').length*width);
-    timer = setInterval(imgChange,delay);
-    $('.banner').hover(function(){
+    $('.hot').append(firstimg).width($('.hot li').length * width);
+    timer = setInterval(imgChange, delay);
+    $('.banner').hover(function () {
         clearInterval(timer);
     },function(){
-        timer = setInterval(imgChange,delay);
+        timer = setInterval(imgChange, delay);
     });
-    $('.dot li').mouseover(function(){
+    $('.dot li').mouseover(function () {
         i = $(this).index();
         $('.hot').stop().animate({
             left: -i * width
         },200);
         dotChange();
     });
-    $('.banner').hover(function(){
+    $('.banner').hover(function () {
         $('.arrow').show();
     },function(){
         $('.arrow').hide();
     });
-    $('.next').click(function(){
+    $('.next').click(function () {
         imgChange()
     });
-    $('.prev').click(function(){
+    $('.prev').click(function () {
         --i;
         if(i == -1){
             i = $('.hot li').length - 2;
             $('.hot').css({
-                left: -($('.hot li').length - 1)*width
+                left: -($('.hot li').length - 1) * width
             });
         }
         $('.hot').stop().animate({
-            left: -1 * width
+            left: -i * width
         },speed);
         dotChange();
     });
@@ -53,7 +53,7 @@ $(function(){
             });
         }
         $('.hot').stop().animate({
-            left: -1 * width
+            left: -i * width
         },speed);
     }
     function dotChange(){
