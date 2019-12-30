@@ -63,4 +63,4 @@ $(function(){
             $('.dot li').eq(i).addClass('on').siblings().removeClass('on');
         }
     }
-});
+}); 
